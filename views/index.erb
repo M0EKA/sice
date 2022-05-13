@@ -9,9 +9,17 @@
 </head>
 
 <body>
-  <%= @title %>
-  <p>Hello wolrd!</p>
-  <p>Hello Sinatra!</p>
+  <form action="/price" method="post">
+    <div><label for="first_quantity">ひとつめの商品の量を入力してください</label></div>
+    <input type="number" name="first_quantity" id="" cols="30" rows="10">
+    <div><label for="first_price">ひとつめの商品の金額を入力してください</label></div>
+    <input type="number" name="first_price" id="" cols="30" rows="10">
+    <div><label for=" second_quantity">ふたつめの商品の量を入力してください</label></div>
+    <input type="number" name=" second_quantity" id="" cols="30" rows="10">
+    <div><label for="second_price">ふたつめの商品の金額を入力してください</label></div>
+    <input type="number" name="second_price" id="" cols="30" rows="10">
+    <input type="submit">
+  </form>
 </body>
 
 </html>
