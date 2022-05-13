@@ -1,6 +1,11 @@
 require 'bundler'
+require 'sinatra/reloader'
 Bundler.require
 
 get '/' do
-  'Hello world'
+  'Hello world!'
+end
+
+get '/about' do
+  'About!!'
 end
