@@ -7,6 +7,10 @@ get '/' do
   erb :index
 end
 
-get '/about' do
-  'About!!'
+post '/price' do
+  
+end
+
+get '/result' do
+  erb :result
 end
