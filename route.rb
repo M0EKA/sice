@@ -7,10 +7,8 @@ get '/' do
   erb :index
 end
 
-post '/price' do
-  
-end
-
 get '/result' do
+  @first = (params["first_price"].to_i / params["first_quantity"].to_i)
+  @second = (params["second_price"].to_i / params["second_quantity"].to_i)
   erb :result
 end
